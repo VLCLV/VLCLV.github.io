@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>联系我~</title>
+    <link rel="shortcut icon" href="./lcl.ico" type="image/x-icon">
+    <link rel="icon" href="./lcl.ico" type="image/x-icon">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    .form {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .bgc {
+        width: 100%;
+    }
+
+    .ribbon {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 300px;
+        top: 50px;
+        margin: auto;
+    }
+
+    .ribbon:after,
+    .ribbon:before {
+        margin-top: 0.5em;
+        content: "";
+        display: flex;
+    ;
+        border: 1.5em solid #fff;
+    }
+
+    .ribbon:after {
+        border-right-color: transparent;
+    }
+
+    .ribbon:before {
+        border-left-color: transparent;
+    }
+
+    .ribbon a:link,
+    .ribbon a:visited {
+        color: #000;
+        text-decoration: none;
+        height: 3.5em;
+        overflow: hidden;
+    }
+
+    .ribbon span {
+        background: #fff;
+        display: inline-block;
+        line-height: 3em;
+        padding: 0 1.5em;
+        margin-top: 0.5em;
+        position: relative;
+        -webkit-transition: background-color 0.2s, margin-top 0.2s;
+        /* Saf3.2+, Chrome */
+        -moz-transition: background-color 0.2s, margin-top 0.2s;
+        /* FF4+ */
+        -ms-transition: background-color 0.2s, margin-top 0.2s;
+        /* IE10 */
+        -o-transition: background-color 0.2s, margin-top 0.2s;
+        /* Opera 10.5+ */
+        transition: background-color 0.2s, margin-top 0.2s;
+    }
+
+    .ribbon a:hover span {
+        background: #55aaff;
+        margin-top: 0;
+    }
+
+    .ribbon span:before {
+        content: "";
+        position: absolute;
+        top: 3em;
+        left: 0;
+        border-right: 0.5em solid #9B8651;
+        border-bottom: 0.5em solid #fff;
+    }
+
+    .ribbon span:after {
+        content: "";
+        position: absolute;
+        top: 3em;
+        right: 0;
+        border-left: 0.5em solid #9B8651;
+        border-bottom: 0.5em solid #fff;
+    }
+    .submit {
+        position: absolute;
+        z-index: 9;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        margin-top: 180px;
+        width: 500px;
+        height: 500px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_title {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 20px;
+		color: #000000;
+    }
+
+    .form_input span {
+        width: 85px;
+        align-self: center;
+    }
+</style>
+<body>
+<div class="form">
+    <img class="bgc" src="./img/4.jpg" alt="">
+    <div class='ribbon'>
+        <a href='./index.html'><span>主页</span></a>
+        <a href='./about.html'><span>关于</span></a>
+        <a href='./contact.html'><span>联系方式</span></a>
+    </div>
+    <div class="submit">
+        <span class="form_title">联系方式</span>
+        <div style="margin: 50px 175px">
+            <img src="./img/ewm.png" width="150px;" height="150px;" alt="" />
+        </div>
+        <span class="form_title">扫码加微信联系，记得备注来意</span>
+    </div>
+</div>
+</body>
+
+</html>
